@@ -15,14 +15,20 @@ body {
     display: flex;
     border-radius: 14px;
     overflow: hidden;
+    background-color: white;
+    justify-content: center
   }
   .photo {
-     width: 350px;
+    margin-top: 10px;
+     width: 300px;
+     height: 380px;
      background-image: url(./assets/images/illustration-sign-up-desktop.svg);
      background-size: cover;
      background-repeat: no-repeat;
      border-top-left-radius: 10px;
      border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     margin-right: 10px;
     }
   .content {
     width: 300px;
@@ -36,4 +42,39 @@ body {
     background-color: hsl(234, 29%, 20%) ;
     color: white;
     font-size: 16px;
+    padding: 10px 15px; /* Aumenta la altura del botón */
+    border-radius: 25px; /* Hace los bordes más redondeados */
   }
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: hsl(231, 49%, 21%);
+    font-size: 10px;
+}
+
+.checklist li::before {
+    content: url(./assets/images/icon-list.svg); /* Símbolo de checkmark */
+    color: hsl(4, 100%, 67%);
+    font-weight: bold;
+    margin-right: 10px;
+}
+h1{
+    font-size: 30px;
+}
+input[type="text"] {
+    width: 100%; /* Ajusta el ancho del input al 100% del contenedor padre */
+    height: 40px; /* Ajusta la altura del input */
+    padding: 10px; /* Añade espacio interno al input */
+    font-size: 16px; /* Ajusta el tamaño del texto dentro del input */
+    border: 1px solid hsl(231, 7%, 60%); /* Define el borde del input */
+    border-radius: 8px; /* Hace los bordes del input redondeados */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del input */
+}
+
