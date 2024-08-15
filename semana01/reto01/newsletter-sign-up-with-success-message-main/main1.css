@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: hsl(234, 29%, 20%);
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    display: flex; /* Flexbox */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  main {
+    /* border: 3px solid red; */
+    width: 650px;
+    min-height: 400px;
+    display: flex;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .photo {
+     width: 350px;
+     background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+    }
+  .content {
+    width: 300px;
+    background-color: hsl(0, 0%, 100%);  
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  button{
+    background-color: hsl(234, 29%, 20%) ;
+    color: white;
+    font-size: 16px;
+  }
