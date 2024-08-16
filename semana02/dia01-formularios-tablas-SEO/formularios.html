@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  />
+</head>
+<body>
+    <main class="container">
+    <h1>Formularios + Inputs + Validaciones</h1>
+    <form>
+        <h2>inputs</h2>
+        <label for="text1">input tipo texto</label>
+        <input type="text" placeholder="ingresa algun texto"
+        id="text1"/>
+
+        <label>
+            Input(solo lectura)
+            <input type="text" placeholder="Input de solo lectura" readonly value="copiar este texto"/>
+        </label>
+
+        <label>
+            Input(desactivado)
+            <input type="text" placeholder="Input desactivado" disabled>
+        </label>
+
+        <label>
+            Input tipo number
+            <input type="number"/>
+        </label>
+    </form>
+    </main>
+</body>
+</html>
