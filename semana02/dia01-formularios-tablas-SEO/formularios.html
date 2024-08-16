@@ -30,7 +30,82 @@
 
         <label>
             Input tipo number
-            <input type="number"/>
+            <input type="number" placeholder="Edad ej. 18" name="edad"/>
+        </label>
+        <label>
+            Input tipo rango de edad
+            <input type="range" name="range_edad" min="1" max="99"
+            step="10"/>
+        </label>
+        <label>
+            Input tipo tel
+            <input type="tel" placeholder="(51) 999 999 999"
+            />
+        </label>
+        <label>
+            Input tipo url
+            <input type="url" placeholder="sitio web"
+            />
+        </label>
+        <label>
+            Input password
+            <input type="password" placeholder="Password"
+            />
+        </label>
+        <label>
+            Input tipo color
+            <input type="color"
+            />
+        </label>
+        <label>
+            Input tipo search
+            <input type="search"
+            />
+        </label>
+        <label>
+            Input tipo file
+            <input type="file" accept=".jpg, .jpeg "
+            />
+        </label>
+        <label>
+            Input tipo file seleccionar archivos multiples
+            <input type="file" multiple
+            />
+        </label>
+        <input type="hidden" value="datos ocultos"/>
+        <input type="submit" value="guardar"/>
+        <input type="reset" value="limpiar"/>
+    </form>
+
+    <form>
+        <h2> input tipo fecha</h2>
+        <label>
+            input tipo datetime-local(fecha y hora)
+            <input type="datetime-local" name="fecha"/>
+        </label>
+        <label>
+            input tipo date (dia)
+            <input type="date" name="dia"/>
+        </label>
+        <label>
+            input tipo week
+            <input type="week" name="semana"/>
+        </label>
+        <label>
+            input tipo mes
+            <input type="month" name="mes"/>
+        </label>
+        <input type="submit" value="guardar">
+    </form>
+
+    <form>
+        <h2>textarea</h2>
+
+        <label>
+            <textarea placeholder="escribe una descripcion sobre ti..." rows="10" name="biografia1"></textarea>
+        </label>
+        <label>
+            <textarea placeholder="escribe una descripcion sobre ti..." rows="5" disabled name="biografia2"></textarea>
         </label>
     </form>
     </main>
